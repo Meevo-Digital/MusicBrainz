@@ -353,8 +353,8 @@ class MusicBrainz
         $entity,
         $mbid,
         array $includes,
-        $limit = 25,
-        $offset = 0,
+        $limit,
+        $offset,
         $releaseType = array(),
         $releaseStatus = array()
     ) {
@@ -446,7 +446,7 @@ class MusicBrainz
      * @param       $mbid
      * @param array $includes
      * @param int   $limit
-     * @param null  $offset
+     * @param int   $offset
      * @param array $releaseType
      * @param array $releaseStatus
      *
@@ -456,9 +456,9 @@ class MusicBrainz
     public function browseRelease(
         $entity,
         $mbid,
-        array $includes = array(),
-        $limit = 25,
-        $offset = null,
+        array $includes,
+        $limit,
+        $offset,
         $releaseType = array(),
         $releaseStatus = array()
     ) {
@@ -482,7 +482,7 @@ class MusicBrainz
      * @param       $entity
      * @param       $mbid
      * @param int   $limit
-     * @param null  $offset
+     * @param int   $offset
      * @param array $includes
      * @param array $releaseType
      *
@@ -492,8 +492,8 @@ class MusicBrainz
     public function browseReleaseGroup(
         $entity,
         $mbid,
-        $limit = 25,
-        $offset = null,
+        $limit,
+        $offset,
         array $includes,
         $releaseType = array()
     ) {
@@ -525,7 +525,7 @@ class MusicBrainz
      *
      * @param Filters\FilterInterface $filter
      * @param int                     $limit
-     * @param null|int                $offset
+     * @param int                     $offset
      *
      * @throws Exception
      * @return array
