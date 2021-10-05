@@ -341,7 +341,7 @@ class MusicBrainz
      * @param                         $mbid
      * @param array                   $includes
      * @param int                     $limit
-     * @param null                    $offset
+     * @param int                     $offset
      * @param array                   $releaseType
      * @param array                   $releaseStatus
      *
@@ -354,7 +354,7 @@ class MusicBrainz
         $mbid,
         array $includes,
         $limit = 25,
-        $offset = null,
+        $offset = 0,
         $releaseType = array(),
         $releaseStatus = array()
     ) {
