@@ -38,7 +38,8 @@ class MusicBrainz
             "release-group-rels",
             "url-rels",
             "work-rels",
-            "annotation"
+            "annotation",
+            "genres"
         ),
         'annotation'    => array(),
         'label'         => array(
